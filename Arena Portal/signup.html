@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arena Casino</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="signup.css" type="text/css">
+</head>
+<body>
+    <div class="menu_bar">
+        <div class="left_links">
+            <div id="casino">
+                <a href="home.html">Casino</a>
+            </div>
+            <div id="games">
+                <a href="sports.html"> All Games</a>
+            </div>
+            <div id="rewards">
+                <a href="#">Arena Rewards</a>
+            </div>
+        </div>
+        <div class="center_logo">
+            <div class="lgo">
+                <img src="arena.png" class="logo">
+            </div>
+        </div>
+        <div class="right_links">
+            <div id="login">
+                <a href="#popup">Log In</a>
+            </div>
+            <div class="join">
+                <a href="signup.html">Join Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="signup">
+        <h1> Join Now</h1>
+        <div>
+            <label for="email">UserName:</label>
+            <input type="text" placeholder="Enter email address" name="email" required>
+        </div>
+        <div>
+            <label for="pass1">Password:</label>
+            <input type="password" placeholder="Enter Password" name="pass1" required>
+        </div>
+        <div>
+            <label for="pass2"> Re Enter :</label>
+            <input type="password" placeholder=" Confirm Password" name="pass2" required>
+        </div>
+        <div class="clearfix">
+            <button  type="submit" class="signupbtn">Sign Up</button>
+            
+            <button onclick="window.location.href='#popup';" type="button" class="loginbtn">Login</button>
+        </div>
+    </div> 
+
+    <footer>
+        <p>Project developed by Subhash and Yaswanth</p>
+        <div>
+            <a href="kanban.html">Kanban Methodology</a>
+            <a href="summary.html">Project Summary</a>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <h1> Login</h1>
+            <div>
+                <label for="username">UserName:</label>
+                <input type="text" placeholder="Enter username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div>
+                <button type="button" class="loginbtn">Login</button>
+            </div>
+            <div>
+                <button class="popup-close"><a href="signup.html">Close</a></button>
+            </div>
+            
+        </div>
+    </div>       
+    
+</body>
+</html>

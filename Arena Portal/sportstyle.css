@@ -1,0 +1,200 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c8ba7b;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin:30px;
+    margin-top: 10px;
+}
+
+.menu_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.left_links, .right_links {
+    display: flex;
+}
+
+.left_links a, .right_links a {
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.center_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: -140px;
+}
+
+.logo {
+    max-width: 100px; 
+}
+
+.menu_bar {
+  overflow: hidden;
+  background: radial-gradient(#0097b2, #7ed957);
+  min-width: 200px;
+}
+
+.menu_bar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu_bar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.image-stack {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-stack img {
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+    min-height:100%;
+    max-height:100%;
+    position: relative;
+}
+
+
+.image-container {
+  position: relative;
+  overflow: hidden; 
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease; /* Transition for the blur effect */
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor style */
+}
+
+.image-container:hover img {
+  filter: blur(5px); /* Apply blur effect on hover */
+}
+
+.image-container:hover .play-button {
+  opacity: 1;
+}
+
+/* Additional style for the button hover effect */
+.play-button:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #38b9ff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}
+
+footer a {
+  color: black; 
+  margin-left: 20px; 
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+footer a:hover {
+  background-color: red;
+  padding: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+#popup:target {
+  display: flex;
+}
+
+
+.loginbtn, .popup-close {
+  width: 50%;
+  margin-bottom: 5px;
+}
+
+
+.loginbtn:hover, .popup-close:hover {
+  background-color: #2980b9;
+}
+
+
+.loginbtn {
+  padding: 5px 10px;
+  background-color: green;
+}
+.popup-close {
+  padding: 5px 10px;
+  background-color: red;
+  text-decoration: none;
+}
+
